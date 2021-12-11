@@ -23,7 +23,7 @@
       "OutItem": {
         "Value": "int"
       },
-      "OutProcessNodeCount": 1,
+      "OutProcessNodeCount": 0,
       "InProcessNode": false,
       "Args": [
         "Value"
@@ -34,7 +34,7 @@
       "OutItem": {
         "Value": "string"
       },
-      "OutProcessNodeCount": 1,
+      "OutProcessNodeCount": 0,
       "InProcessNode": false,
       "Args": [
         "Value"
