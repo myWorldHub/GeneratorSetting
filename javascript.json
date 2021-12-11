@@ -108,13 +108,13 @@
     }
   },
   "Programs": {
-    "OnClicked": "{b}{In:0}.addEventListener(\"click\",function(){{\n{ia}}});\n",
+    "OnClicked": "{b}{In:0}.addEventListener(\"click\",function(){{\n{ia}\n}});\n",
     "Value<int>": "{Out:0} = {Args:0};\n{a}",
     "Value<string>": "{Out:0} = \"{Args:0}\";\n{a}",
     "AdditionOperator<int,int,int>": "{b}{Out:0} = {In:0} + {In:1};\n{a}",
     "Cast<int,string>": "{b}{Out:0} = {In:0}.toString();\n{a}",
     "Cast<string,int>": "{b}{Out:0} = parseInt({In:0});\n{a}",
-    "GetElementById": "{b}{Out:0} = document.getElementById(\"{In:0}\");\n{a}",
+    "GetElementById": "{b}{Out:0} = document.getElementById({In:0});\n{a}",
     "SetText": "{b}{In:0}.innerText = {In:1};\n{a}",
     "GetText": "{b}{Out:0} = {In:0}.innerText;\n{a}"
   }
