@@ -11,7 +11,7 @@
   "Graphs": {
     "OnClicked": {
       "InItem": {
-        "ElementId": "string"
+        "Element": "element"
       },
       "OutItem": {},
       "OutProcessNodeCount": 1,
