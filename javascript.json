@@ -1,0 +1,121 @@
+{
+  "Version": "0",
+  "Name": "JavaScript",
+  "Settings": {
+    "Mode": "1",
+    "Indent": "  ",
+    "VariableNaming": "{name}{count}",
+    "Comment": "# {0}\n",
+    "ErrorLevel": "0"
+  },
+  "Graphs": {
+    "OnClicked": {
+      "InItem": {
+        "ElementId": "string"
+      },
+      "OutItem": {},
+      "OutProcessNodeCount": 1,
+      "InProcessNode": false,
+      "Args": []
+    },
+    "Value<int>": {
+      "InItem": {},
+      "OutItem": {
+        "Value": "int"
+      },
+      "OutProcessNodeCount": 1,
+      "InProcessNode": false,
+      "Args": [
+        "Value"
+      ]
+    },
+    "Value<string>": {
+      "InItem": {},
+      "OutItem": {
+        "Value": "string"
+      },
+      "OutProcessNodeCount": 1,
+      "InProcessNode": false,
+      "Args": [
+        "Value"
+      ]
+    },
+    "Cast<int,string>": {
+      "InItem": {
+        "Value": "int"
+      },
+      "OutItem": {
+        "Value": "string"
+      },
+      "OutProcessNodeCount": 1,
+      "InProcessNode": true,
+      "Args": []
+    },
+    "Cast<string,int>": {
+      "InItem": {
+        "Value": "string"
+      },
+      "OutItem": {
+        "Value": "int"
+      },
+      "OutProcessNodeCount": 1,
+      "InProcessNode": true,
+      "Args": []
+    },
+    "AdditionOperator<int,int,int>": {
+      "InItem": {
+        "Value1": "int",
+        "Value2": "int"
+      },
+      "OutItem": {
+        "Result": "int"
+      },
+      "OutProcessNodeCount": 1,
+      "InProcessNode": true,
+      "Args": []
+    },
+    "GetElementById": {
+      "InItem": {
+        "Id": "string"
+      },
+      "OutItem": {
+        "Element": "element"
+      },
+      "OutProcessNodeCount": 1,
+      "InProcessNode": true,
+      "Args": []
+    },
+    "SetText": {
+      "InItem": {
+        "Element": "element",
+        "Text": "string"
+      },
+      "OutItem": {},
+      "OutProcessNodeCount": 1,
+      "InProcessNode": true,
+      "Args": []
+    },
+    "GetText": {
+      "InItem": {
+        "Element": "element"
+      },
+      "OutItem": {
+        "Text": "string"
+      },
+      "OutProcessNodeCount": 1,
+      "InProcessNode": true,
+      "Args": []
+    }
+  },
+  "Programs": {
+    "OnClicked": "document.getElementById(\"{Args:0}\").addEventListener(\"click\",function(){\n{ia}});\n",
+    "Value<int>": "{Out:0} = {Args:0};\n{a}",
+    "Value<string>": "{Out:0} = \"{Args:0}\";\n{a}",
+    "AdditionOperator<int,int,int>": "{b}{Out:0} = {In:0} + {In:1};\n{a}",
+    "Cast<int,string>": "{b}{Out:0} = {In:0}.toString();\n{a}",
+    "Cast<string,int>": "{b}{Out:0} = parseInt({In:0});\n{a}",
+    "GetElementById": "{b}{Out:0} = document.getElementById(\"{In:0}\");\n{a}",
+    "SetText": "{b}{In:0}.innerText = {In:1};\n{a}",
+    "GetText": "{b}{Out:0} = {In:0}.innerText;\n{a}"
+  }
+}
