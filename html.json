@@ -1,0 +1,34 @@
+{
+    "Version": "0",
+    "Name": "HTML",
+    "Settings": {
+      "Mode": "1",
+      "Indent": "  ",
+      "VariableNaming": "",
+      "Comment": "<!-- {0} -->\n",
+      "ErrorLevel": "0"
+    },
+    "Graphs": {
+      "Start": {
+        "InItem": {},
+        "OutItem": {},
+        "OutProcessNodeCount": 1,
+        "InProcessNode": false,
+        "Args": []
+      },
+      "Button": {
+        "InItem": {},
+        "OutItem": {},
+        "OutProcessNodeCount": 1,
+        "InProcessNode": true,
+        "Args": [
+          "Id",
+          "Text"
+        ]
+      }
+    },
+    "Programs": {
+      "Start": "<!--HTML-->\n{a}",
+      "Button": "{b}<button id=\"{Args:0}\">{Args:1}</button>\n{a}"
+    }
+  }
