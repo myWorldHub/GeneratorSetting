@@ -108,7 +108,7 @@
     }
   },
   "Programs": {
-    "OnClicked": "{b}{In:0}.addEventListener(\"click\",function(){{\n{ia}\n}});\n",
+    "OnClicked": "{b}{In:0}.addEventListener(\"click\",function(){{\n\n{ia}\n}});\n",
     "Value<int>": "{Out:0} = {Args:0};\n{a}",
     "Value<string>": "{Out:0} = \"{Args:0}\";\n{a}",
     "AdditionOperator<int,int,int>": "{b}{Out:0} = {In:0} + {In:1};\n{a}",
