@@ -9,26 +9,46 @@
       "ErrorLevel": "0"
     },
     "Graphs": {
-      "Start": {
+      "body": {
         "InItem": {},
         "OutItem": {},
         "OutProcessNodeCount": 1,
         "InProcessNode": false,
         "Args": []
       },
-      "Button": {
+      "div":{
         "InItem": {},
         "OutItem": {},
         "OutProcessNodeCount": 1,
         "InProcessNode": true,
         "Args": [
+          "Id"
+        ]
+      },
+      "button": {
+        "InItem": {},
+        "OutItem": {},
+        "OutProcessNodeCount": 0,
+        "InProcessNode": true,
+        "Args": [
           "Id",
+          "Text"
+        ]
+      },
+      "Text":{
+        "InItem": {},
+        "OutItem": {},
+        "OutProcessNodeCount": 0,
+        "InProcessNode": true,
+        "Args": [
           "Text"
         ]
       }
     },
     "Programs": {
-      "Start": "<!--HTML-->\n{a}",
-      "Button": "{b}<button id=\"{Args:0}\">{Args:1}</button>\n{a}"
+      "body": "<!--Body-->\n{a}",
+      "button": "<button id=\"{Args:0}\">{Args:1}</button>\n",
+      "div": "<div id=\"{Args:0}\">{ia}</div>\n",
+      "Text": "{Args:0}"
     }
   }
