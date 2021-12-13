@@ -47,7 +47,7 @@
     },
     "Programs": {
       "body": "<!--Body-->\n{a}",
-      "button": "<button id=\"{Args:0}\">{Args:1}</button>",
+      "button": "<button id=\"{Args:0}\">{Args:1}</button>\n",
       "div": "<div id=\"{Args:0}\">\n{ia}</div>\n",
       "Text": "{Args:0}\n"
     }
