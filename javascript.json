@@ -62,7 +62,7 @@
       "InProcessNode": true,
       "Args": []
     },
-    "AdditionOperator<int,int,int>": {
+    "+<int,int,int>": {
       "InItem": {
         "Value1": "int",
         "Value2": "int"
