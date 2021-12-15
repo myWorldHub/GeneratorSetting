@@ -5,7 +5,7 @@
     "Mode": "1",
     "Indent": "  ",
     "VariableNaming": "{name}{count}",
-    "Comment": "# {0}\n",
+    "Comment": "// {0}\n",
     "ErrorLevel": "0"
   },
   "Graphs": {
