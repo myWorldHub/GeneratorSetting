@@ -1,0 +1,50 @@
+{
+    "Version": "0",
+    "Name": "Haskell",
+    "Settings": {
+      "Mode": "1",
+      "Indent": "  ",
+      "VariableNaming": "{name}{count}",
+      "Comment": "{{- {0} -}}",
+      "ErrorLevel": "0"
+    },
+    "Graphs": {
+      "Main": {
+        "InItem": {},
+        "OutItem": {},
+        "OutProcessNodeCount": 1,
+        "InProcessNode": false,
+        "Args": []
+      },
+      "Integer":{
+          "InItem": {},
+          "OutItem": {
+              "x" : "integer"
+          },
+          "OutProcessNodeCount": 0,
+          "InProcessNode": false,
+          "Args": [
+              "Value"
+          ]
+      },
+      "+<Integer,Integer,Integer>":{
+            "InItem": {
+                "x" : "integer",
+                "y" : "integer"
+            },
+            "OutItem": {
+                "z" : "integer"
+            },
+            "OutProcessNodeCount": 0,
+            "InProcessNode": false,
+            "Args": []
+        }
+      }
+    },
+    "Programs": {
+      "Main": "main = \ndo\n{ia}\nlet\n{ib}",
+      "Integer": "(\\ -> {Args:0} :: Integer)\n",
+      "+<Integer,Integer,Integer>": "(\\ -> do\n{In:0} + {In:1}\nlet\n{ib})"
+    }
+  }
+  
