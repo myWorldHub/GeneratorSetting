@@ -38,7 +38,6 @@
             "OutProcessNodeCount": 0,
             "InProcessNode": false,
             "Args": []
-        }
       }
     },
     "Programs": {
@@ -46,5 +45,4 @@
       "Integer": "(\\ -> {Args:0} :: Integer)\n",
       "+<Integer,Integer,Integer>": "(\\ -> do\n{In:0} + {In:1}\nlet\n{ib})"
     }
-  }
-  
+}
